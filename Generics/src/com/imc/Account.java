@@ -10,6 +10,7 @@ public class Account {
 		this.balance = balance;
 		this.cutoId = cutoId;
 	}
+	
 	public int getAccId() {
 		return accId;
 	}
@@ -29,12 +30,12 @@ public class Account {
 		this.cutoId = cutoId;
 	}
 	
-	public double deposit(double balance) {
-		this.balance =this.balance+balance;
+	public double deposit(double amount) {
+		balance +=amount;
 		return balance;
 	}
-	public double wihDraw(double balance) {
-		this.balance=this.balance-balance;
+	public double wihDraw(double amount) {
+		balance-=amount;
 		return balance;
 	}
 }
