@@ -28,7 +28,7 @@ public class Account {
 	}
 	public void setCutoId(int cutoId) {
 		this.cutoId = cutoId;
-	}
+	 }
 	
 	public double deposit(double amount) {
 		balance +=amount;
