@@ -30,12 +30,12 @@ public class Account {
 		this.cutoId = cutoId;
 	}
 	
-	public double deposit(double amount) {
+	public void deposit(double amount) {
 		balance +=amount;
-		return balance;
+		
 	}
-	public double wihDraw(double amount) {
+	public void wihDraw(double amount) {
 		balance-=amount;
-		return balance;
+		
 	}
 }
