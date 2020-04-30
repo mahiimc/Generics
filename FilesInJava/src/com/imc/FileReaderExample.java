@@ -5,18 +5,21 @@ import java.io.IOException;
 
 public class FileReaderExample {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		String fileName="input.txt";
-		FileInputStream in = null;  // throws IOException 
+		FileInputStream in = null;  //  ByteStrean && Root class : Input Stream
 		try {
 			in = new FileInputStream(fileName);
 			int c ;
-			while((c=in.read())!=-1) {
+			while((c=in.read())!=-1) { // End of File 
 				System.out.print((char)c);
 			}
 		}
-		catch(IOException e) {
-			e.printStackTrace();
+		finally {
+			if(in != null ) {
+			in.close();
+			}
+			
 		}
 	}
 }
